@@ -9,7 +9,6 @@ pub fn main() {
     std::io::stdin().read_line(&mut second_number).expect("Failed to read line");
     let second_number: f64 = second_number.trim().parse().expect("Please enter a valid number");
     
-    // Perform arithmetic operations
     let sum = first_number + second_number;
     let difference = first_number - second_number;
     let product = first_number * second_number;
