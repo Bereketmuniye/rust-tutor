@@ -2,7 +2,7 @@ pub fn main(){
     println!("This is the array module.");
 
     //array with data type 
-    let number : [i32;5]=[1,2,3,4,5];
+    let number : [i32;5]=[2,2,3,4,5];
     println!("Array of numbers is {:?}",number);
 
     //array without data type
@@ -38,7 +38,7 @@ pub fn main(){
     //practice question on array 
 
     //1.sum of array 
-    let num =[1,2,3,4,5];
+    let num =[2,2,3,4,5];
     let mut sum = 0;
     for index in 0..5{
         sum +=num[index];
@@ -81,9 +81,10 @@ pub fn main(){
     println!("the last element of array is {}",num[(size-1)]);
 
     //check for duplicates in array
-    for i in 0..5{
-        if(num[i]==num[i+1]){
-            println!("the number is duplicate {}",num[i]);
+    let mut seen = std::collections::HashSet::new();
+    for &num in &num{
+        if !seen.insert(num){
+            println!("the number is duplicate {}",num);
         }
     }
 

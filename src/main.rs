@@ -19,6 +19,7 @@ mod day17;
 mod day18;
 mod day19;
 mod array;
+mod structs;
 fn main() {
     println!("Hello, world!");
     // day1::main();
@@ -40,5 +41,6 @@ fn main() {
     // day17::main();
     // day18::main();
     // day19::main();
-    array::main();
+    // array::main();
+    structs::main();
 }
